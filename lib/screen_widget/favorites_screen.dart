@@ -1,12 +1,19 @@
 import 'package:flutter/material.dart';
+import '../widgets/main_drawer.dart';
 
 class FavoritesScreen extends StatelessWidget {
   const FavoritesScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text('The favorites'),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Your Filters'),
+      ),
+      drawer: MainDrawer(),
+      body: Center(
+        child: Text('The favorites'),
+      ),
     );
   }
 }
